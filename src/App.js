@@ -3,9 +3,10 @@ import Button from './components/Button';
 const {useState} = React;
  
 const App = () => {
-  let count = 0;
-  const incrementCount = (increment) =>{
+  const [count, setCount] = useState(0)
 
+  const incrementCount = (increment) =>{
+    setCount(count + increment)
   }
   return (
     <div>
