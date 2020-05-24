@@ -4,14 +4,14 @@ import Button from './components/Button';
 const App = () => {
   let count = 0;
   const incrementCount = (increment) =>{
-    
+
   }
   return (
     <div>
-      <Button increment={1}/>
-      <Button increment={10}/>
-      <Button increment={100}/>
-      <Button increment={1000}/>
+      <Button increment={1} onClick={onClick}/>
+      <Button increment={10} onClick={onClick}/>
+      <Button increment={100} onClick={onClick}/>
+      <Button increment={1000} onClick={onClick}/>
       <span>{count}</span>
     </div>
   );
