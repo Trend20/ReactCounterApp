@@ -1,8 +1,11 @@
 import React from 'react';
  
-const Button = ({increment}) => {
+const Button = ({increment,onClick}) => {
+    const handleClick = () =>{
+        onClick(increment);
+    }
     return (
-       <button>+{increment}</button>
+       <button onClick={handleClick}>+{increment}</button>
     );
 }
  

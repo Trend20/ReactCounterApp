@@ -3,6 +3,9 @@ import Button from './components/Button';
  
 const App = () => {
   let count = 0;
+  const incrementCount = (increment) =>{
+    
+  }
   return (
     <div>
       <Button increment={1}/>
