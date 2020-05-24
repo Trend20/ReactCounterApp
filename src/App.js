@@ -9,10 +9,10 @@ const App = () => {
   }
   return (
     <div>
-      <Button increment={1} onClick={onClick}/>
-      <Button increment={10} onClick={onClick}/>
-      <Button increment={100} onClick={onClick}/>
-      <Button increment={1000} onClick={onClick}/>
+      <Button increment={1} onClick={ incrementCount}/>
+      <Button increment={10} onClick={ incrementCount}/>
+      <Button increment={100} onClick={ incrementCount}/>
+      <Button increment={1000} onClick={ incrementCount}/>
       <span>{count}</span>
     </div>
   );
